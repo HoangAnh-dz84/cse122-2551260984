@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 02: Quảng cáo tour du lịch “Hành trình Trung Hoa”</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 12px;
+      background: #F4F4F4;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    }
+
+    /* ===== Khung quảng cáo ===== */
+    article.banner {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px;
+      background: linear-gradient(160deg, #C9A227, #A8861B);
+      color: #FFFFFF;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Clearfix: khung vàng bao trọn ảnh nổi */
+    article.banner::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* ===== Tiêu đề trích dẫn ===== */
+    .banner h1 {
+      margin: 0 0 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-align: center;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    /* ===== Các đoạn văn: căn đều hai lề ===== */
+    .banner p {
+      margin: 0 0 12px;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #FFFFFF;
+      text-align: justify;
+    }
+
+    /* ===== Ảnh Vạn Lý Trường Thành chèn nổi bên phải ===== */
+    .banner img.anh-noi {
+      float: right;
+      width: 260px;
+      height: auto;
+      margin: 0 14px 18px 14px;
+      border: 3px solid rgb(255, 255, 255, 0.85);
+      border-radius: 4px;
+    }
+
+    /* ===== Thích ứng màn hình nhỏ ===== */
+    @media (max-width: 600px) {
+      article.banner {
+        padding: 20px 18px;
+      }
+
+      .banner h1 {
+        font-size: 21px;
+      }
+
+      .banner img.anh-noi {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="banner">
+    <h1>“Bất đảo Trường Thành phi hảo hán”…</h1>
+
+    <img class="anh-noi" src="Anh/Bai02/greatwall.jpg" alt="Vạn Lý Trường Thành">
+    <!-- Ảnh gốc: Severin.stalder, “The Great Wall of China at Jinshanling-edit.jpg”,
+         Wikimedia Commons, CC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0/
+         Bản sử dụng trong trang đã được thu nhỏ. -->
+
+    <p>Công ty du lịch Hoàn Mỹ giới thiệu hành trình khám phá Trung Hoa: chinh phục Vạn Lý Trường Thành, ghé Thập Tam Lăng, tham quan Cung Điện Mùa Hè – nơi Từ Hy Thái Hậu cho “đào hồ, đắp núi, xây chùa”.</p>
+
+    <p>Du khách còn được dạo quảng trường Thiên An Môn, chiêm ngưỡng Cố Cung, thưởng thức vịt quay Bắc Kinh. Tiếp đó là Thượng Hải với vườn Dự Viên và khu lầu Vạn Quốc bên bến sông Hoàng Phố.</p>
+
+    <p>Hành trình khép lại ở Hàng Châu – nơi có sự tích “cầu gãy mà không gãy” gắn với chuyện Lương Sơn Bá – Chúc Anh Đài, cùng thiên đường mua sắm ngọc trai quý hiếm.</p>
+  </article>
+</body>
+</html>
